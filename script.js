@@ -21,7 +21,14 @@ function playRound(){
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
         return win;
     } else {
-        return lose
+        return lose;
     }
+}
 
+function game() {
+    console.log(playRound())
+    console.log(playRound())
+    console.log(playRound())
+    console.log(playRound())
+    console.log(playRound())
 }
