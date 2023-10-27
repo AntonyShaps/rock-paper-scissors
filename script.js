@@ -25,10 +25,7 @@ function playRound(){
     }
 }
 
-function game() {
-    console.log(playRound())
-    console.log(playRound())
-    console.log(playRound())
-    console.log(playRound())
-    console.log(playRound())
-}
+
+const rock = document.querySelector('.rock')
+const paper = documment.querySelector('.paper')
+const scissors = document.querySelector('.scissors')
