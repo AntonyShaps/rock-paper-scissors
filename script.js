@@ -28,16 +28,18 @@ function playRound(playerSelection){
 const rock = document.querySelector('.rock')
 const paper = document.querySelector('.paper')
 const scissors = document.querySelector('.scissors')
-
+const roundOutcomes = document.createElement('div')
+const body = document.querySelector('body')
+body.appendChild(roundOutcomes)
 
 rock.addEventListener('click', () => {
-    console.log(playRound('rock'));  // Logs result to console
+    roundOutcomes.innerHTML += playRound('rock') + '<br>';  
 });
 
 paper.addEventListener('click', () => {
-    console.log(playRound('paper'));  // Logs result to console
+    roundOutcomes.innerHTML += playRound('paper') + '<br>';  
 });
 
 scissors.addEventListener('click', () => {
-    console.log(playRound('scissors'));  // Logs result to console
+    roundOutcomes.innerHTML += playRound('scissors') + '<br>';
 });
