@@ -6,8 +6,7 @@ function getComputerChoice() {
 
 
 
-function playRound(){
-    var playerSelection = prompt("Make your choice!").toLowerCase();
+function playRound(playerSelection){
     var computerSelection = getComputerChoice();
     var draw = `buddy, it's a draw! ${playerSelection} can't beat ${computerSelection}`;
     var win = `buddy, you have won! ${playerSelection} beats ${computerSelection}`;
@@ -27,5 +26,18 @@ function playRound(){
 
 
 const rock = document.querySelector('.rock')
-const paper = documment.querySelector('.paper')
+const paper = document.querySelector('.paper')
 const scissors = document.querySelector('.scissors')
+
+
+rock.addEventListener('click', () => {
+    console.log(playRound('rock'));  // Logs result to console
+});
+
+paper.addEventListener('click', () => {
+    console.log(playRound('paper'));  // Logs result to console
+});
+
+scissors.addEventListener('click', () => {
+    console.log(playRound('scissors'));  // Logs result to console
+});
